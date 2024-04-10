@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="STYLES.CSS">
+    <link rel="icon" href="https://admin.santateresaie.edu.co/utilidades/escudo.gif">
+
+    <style>
+        
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .encabezado{
+            background-color: #0693e3;
+            display: flex;
+            align-items: center;
+            padding: 15px;
+        }
+
+        .encabezado nav{
+            margin-left: auto; /* Esto mueve la barra de navegación al lado izquierdo */
+        }
+
+        .encabezado nav ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .encabezado nav ul ul {
+            display: none; /* Hide sub-menu items by default */
+            position: absolute;
+            background-color: #0693e3; /* Background color for sub-menu */
+            border-radius: 0px 0px 5px 5px; /* Rounded corners for sub-menu */
+            min-width: 100px; /* Ancho mínimo para el menú desplegable */
+            margin-top: 0px; /* Espacio entre el botón y el menú */
+        }
+
+        .encabezado nav ul ul li {
+            width: 50%; /* Ajusta el ancho de los elementos del menú */
+            text-align: center; /* Centra el texto en los elementos del menú */
+        }
+
+        .encabezado nav ul li:hover > ul {
+            display: block; /* Show sub-menu items on hover */
+        }
+
+        a{
+            text-decoration: none;
+            font-size: 30px;
+            color: rgb(255, 255, 255);
+            padding: 12px 20px;
+            display: block;
+            font-family: Brush Script MT;
+            position: relative; /* Required for positioning sub-menu */
+        }
+
+        a:hover{
+            background: #8ed1fc
+            
+
+        }
+
+        .imagen{
+            opacity: 1.0;
+        }
+
+        .imagen img:hover{
+            opacity: 0.5;
+        }
+
+        body {
+            background: linear-gradient(to right, #c0c7e4, #c7e9eb); /* Cambia los colores a tu gusto */
+        }
+
+        .le{
+            font-family: Bradley Hand;
+            color: rgb(12, 8, 71);
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start; /* Alinear los elementos al inicio del eje vertical */
+            margin-top: 20px;
+            padding: 20px; /* Agregar un espacio alrededor del contenido */
+            border-radius: 10px; /* Añadir bordes redondeados al contenido */
+
+        }
+
+       
+
+        .content p {
+            font-size: 14px;
+            max-width: 400px; /* Limitar el ancho del párrafo */
+            margin-bottom: 20px; /* Agregar espacio inferior al párrafo */
+            box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+
+        }
+        .letra{
+            font-family: sans-serif;
+        }
+
+
+        .button {
+  display: inline-block;
+  background-color: #21367c; /* Color de fondo */
+  border: none;
+  color: white; /* Color del texto */
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+.button:hover {
+  background-color: #5370ce; /* Cambia el color de fondo al pasar el ratón */
+  
+   }
+   .mission-vision {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff; /* Fondo blanco para destacar */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra para resaltar */
+        }
+
+        .mission,
+        .vision {
+            flex: 1;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .mission h2,
+        .vision h2 {
+            color: #0693e3; /* Color del título */
+        }
+
+        .mission p,
+        .vision p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333; /* Color del texto */
+        }
+  
+    </style>
+</head>
+<body style="background-color:#9eaaf1;">
+    <header class="encabezado">
+        <img src="https://admin.santateresaie.edu.co/utilidades/escudo.gif" width="80px" height="80px">
+        <nav>
+            <ul>
+                <li><a href="INICIO.HTML">Home</a></li>
+                <li id="nosotros"><a href="nosotros.html">Nosotros</a>
+                </li>
+                <li><a href="#">Personal</a>
+                    <ul>
+                        <li><a href="directivos.html">Directivos</a></li>
+                        <li><a href="Docentes.html">Docentes</a></li>
+                    </ul>
+                </li>
+                <li><a href="contactos.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+<div class="content">
+    <div class="mission-vision">
+        <div class="mission">
+            <h2>Rector</h2>
+            <img src="rec-Photoroom.png-Photoroom.png" width="300" height="300">
+            <p><b>Hector Garcia Duque</b> <br>
+            Pregrado en derecho y maestria en administración</p>
+        </div>
+        <div class="vision">
+            <h2>Coordinador convivencia</h2>
+            <img src="cordi.png"width="300" height="300">
+            <p><b>German Darío Muñoz Ortiz </b><br>
+            Ingeniero agrónomo, especialista en educación 
+        y desarrollo humano</p>
+        </div>
+        <div class="vision">
+            <h2>Coordinadora académica</h2>
+            <img src="cor-Photoroom.png-Photoroom.png"width="300" height="300">
+            <p><b>Brígida Marcela Calle Amaya</b><br>
+                Ingeniera industrial y magister en educación matemática </p>
+        </div>
+    </div>
+</div>
+    
+    <script>
+        // Obtener el elemento del botón "Nosotros"
+        var nosotros = document.getElementById("nosotros");
+
+        // Añadir un evento para mantener visible el menú desplegable al pasar el cursor sobre él
+        nosotros.addEventListener("mouseover", function() {
+            // Obtener el menú desplegable
+            var submenu = nosotros.querySelector("ul");
+
+            // Mostrar el menú desplegable
+            submenu.style.display = "block";
+        });
+
+        // Añadir un evento para ocultar el menú desplegable al quitar el cursor del botón "Nosotros"
+        nosotros.addEventListener("mouseout", function() {
+            // Obtener el menú desplegable
+            var submenu = nosotros.querySelector("ul");
+
+            // Ocultar el menú desplegable
+            submenu.style.display = "none";
+        });
+    </script>
+
+</body>
+</html>

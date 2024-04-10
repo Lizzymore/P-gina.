@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="STYLES.CSS">
+    <link rel="icon" href="https://admin.santateresaie.edu.co/utilidades/escudo.gif">
+
+    <style>
+        
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .encabezado{
+            background-color: #0693e3;
+            display: flex;
+            align-items: center;
+            padding: 15px;
+        }
+
+        .encabezado nav{
+            margin-left: auto; /* Esto mueve la barra de navegación al lado izquierdo */
+        }
+
+        .encabezado nav ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .encabezado nav ul ul {
+            display: none; /* Hide sub-menu items by default */
+            position: absolute;
+            background-color: #0693e3; /* Background color for sub-menu */
+            border-radius: 0px 0px 5px 5px; /* Rounded corners for sub-menu */
+            min-width: 100px; /* Ancho mínimo para el menú desplegable */
+            margin-top: 0px; /* Espacio entre el botón y el menú */
+        }
+
+        .encabezado nav ul ul li {
+            width: 50%; /* Ajusta el ancho de los elementos del menú */
+            text-align: center; /* Centra el texto en los elementos del menú */
+        }
+
+        .encabezado nav ul li:hover > ul {
+            display: block; /* Show sub-menu items on hover */
+        }
+
+        a{
+            text-decoration: none;
+            font-size: 30px;
+            color: rgb(255, 255, 255);
+            padding: 12px 20px;
+            display: block;
+            font-family: Brush Script MT;
+            position: relative; /* Required for positioning sub-menu */
+        }
+
+        a:hover{
+            background: #8ed1fc
+            
+
+        }
+
+        .imagen{
+            opacity: 1.0;
+        }
+
+        .imagen img:hover{
+            opacity: 0.5;
+        }
+
+        body {
+            background: linear-gradient(to right, #c0c7e4, #c7e9eb); /* Cambia los colores a tu gusto */
+        }
+
+        .le{
+            font-family: Bradley Hand;
+            color: rgb(12, 8, 71);
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start; /* Alinear los elementos al inicio del eje vertical */
+            margin-top: 20px;
+            padding: 20px; /* Agregar un espacio alrededor del contenido */
+            border-radius: 10px; /* Añadir bordes redondeados al contenido */
+        }
+
+       
+
+        .content p {
+            font-size: 14px;
+            max-width: 400px; /* Limitar el ancho del párrafo */
+            margin-bottom: 20px; /* Agregar espacio inferior al párrafo */
+        }
+        .letra{
+            font-family: sans-serif;
+        }
+
+        .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.image:hover img {
+    transform: scale(1.05);
+}
+
+.caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.438);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image:hover .caption {
+    opacity: 1;
+}
+
+.caption h3,
+.caption p {
+    color: #fff;
+    margin: 0;
+}
+
+.caption h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.imagenn{
+    position: relative;
+    width: 350px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.imagenn img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.imagenn:hover img {
+    transform: scale(1.05);
+}
+
+.caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.438);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.imagenn:hover .caption {
+    opacity: 1;
+}
+
+.caption h3,
+.caption p {
+    color: #fff;
+    margin: 0;
+}
+
+.caption h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+    </style>
+</head>
+<body style="background-color:#9eaaf1;">
+    <header class="encabezado">
+        <img src="https://admin.santateresaie.edu.co/utilidades/escudo.gif" width="80px" height="80px">
+        <nav>
+            <ul>
+                <li><a href="INICIO.HTML">Home</a></li>
+                <li id="nosotros"><a href="nosotros.html">Nosotros</a>
+                </li>
+                <li><a href="#">Personal</a>
+                    <ul>
+                        <li><a href="directivos.html">Directivos</a></li>
+                        <li><a href="Docentes.html">Docentes</a></li>
+                    </ul>
+                </li>
+                <li><a href="contactos.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <div class="gallery">
+        <div class="image">
+          <img src="do1-removebg-preview.png" width="300" height="300">
+        <div class="caption">
+          <h3>Docente</h3>
+          <p><strong>Nombre:</strong> Daniela Jaramillo Yépez</p><br>
+          <p><strong>Estudios:</strong> Licenciada en literatura y lengua castellana, Maestría en educación.</p>
+        </div>
+      </div>
+  
+        <div class="image">
+          <img src="do2-removebg-preview.png" width="300" height="300">
+        <div class="caption">
+          <h3>Docente</h3>
+          <p><strong>Nombre:</strong> Fabio Alexander Vargas Ríos</p><br>
+          <p><strong>Estudios:</strong> Licenciatura en filosofía y letras, Maestría en ciencias de la educación.</p>
+        </div>
+      </div>
+
+        <div class="image">
+          <img src="do3-removebg-preview.png" width="300" height="300">
+        <div class="caption">
+          <h3>Docente</h3>
+          <p><strong>Nombre:</strong> Liliana Stella Londoño Saldarriaga</p><br>
+          <p><strong>Estudios:</strong> Historiadora, Especialista en derechos humanos y gestión de la educación, Magíster en ciencias políticas.</p>
+        </div>
+      </div>
+
+        <div class="image">
+          <img src="do4-removebg-preview.png" width="300" height="300">
+        <div class="caption">
+          <h3>Docente</h3>
+          <p><strong>Nombre:</strong> Gloria Elena Aristizábal Pérez</p><br>
+          <p><strong>Estudios:</strong> Artes aplicadas, Arquitecta, Maestría en interventoría de obras, Curso de pedagogía de actualización docente. </p>
+        </div>
+    </div>
+      <div class="image">
+        <img src="do5-removebg-preview.png" width="300" height="300">
+      <div class="caption">
+        <h3>Docente</h3>
+        <p><strong>Nombre:</strong> Claudia Elena Isaza Graciano</p><br>
+        <p><strong>Estudios:</strong> Ingeniera agrónoma, Magíster en enseñanza de la ciencias exactas y naturales. 
+        </p>
+      </div>
+    </div>
+    <div class="image">
+        <img src="do6-removebg-preview.png" width="300" height="300">
+      <div class="caption">
+        <h3>Docente</h3>
+        <p><strong>Nombre:</strong> Carlos Mario Cárdenas Mazenet</p><br>
+        <p><strong>Estudios:</strong> Licenciatura en matemáticas y física, Posgrado en matemáticas avanzadas. </p>
+      </div>
+    </div>
+    <div class="image">
+        <img src="do7-removebg-preview.png" width="300" height="300">
+      <div class="caption">
+        <h3>Docente</h3>
+        <p><strong>Nombre:</strong> Lida Yaneth Vélez espinosa</p><br>
+        <p><strong>Estudios:</strong> Ingeniería electrónica, Ingeniería administrativa, Maestría en educación matemática, Doctorado en educación.</p>
+      </div>
+    </div>
+
+    <div class="image">
+        <img src="do8-removebg-preview.png" width="300" height="300">
+      <div class="caption">
+        <h3>Docente</h3>
+        <p><strong>Nombre:</strong>Sergio Armando Gamboa Morales</p><br>
+        <p><strong>Estudios:</strong> Licenciado en educación básica con énfasis en ciencias naturales y educación ambiental, Magister en ciencias de la educación. </p>
+      </div>
+    </div>
+    <div class="image">
+        <img src="do9-removebg-preview.png" width="300" height="300">
+      <div class="caption">
+        <h3>Docente</h3>
+        <p><strong>Nombre:</strong>Elías Otálora</p><br>
+        <p><strong>Estudios:</strong> PTC, Especialización en pedagogía de la lúdica</p>
+      </div>
+    </div>
+
+    <div class="image">
+        <img src="do10-removebg-preview.png" width="300" height="300">
+      <div class="caption">
+        <h3>Docente</h3>
+        <p><strong>Nombre:</strong>Giovana María Echeverri Rios</p><br>
+        <p><strong>Estudios:</strong> Licenciada en Ciencia Religiosa, especialista en gerencia educativa y mallister en Educación.</p>
+      </div>
+    </div>
+
+    <div class="image">
+        <img src="do11-removebg-preview.png" width="300" height="300">
+      <div class="caption">
+        <h3>Docente</h3>
+        <p><strong>Nombre:</strong>Monica Mariza Hoyos Zapata </p><br>
+        <p><strong>Estudios:</strong> Ingeniería agrícola, diplomados en formación pedagógica, Mallister en Educación.</p>
+      </div>
+    </div>
+
+    <div class="image">
+        <img src="do12-removebg-preview.png" width="300" height="300">
+      <div class="caption">
+        <h3>Docente</h3>
+        <p><strong>Nombre:</strong>Frank Morales Tobón </p><br>
+        <p><strong>Estudios:</strong> Administrador de empresas, Especialista en finanzas, Mágister en educación.</p>
+      </div>
+    </div>
+
+    <div class="image">
+        <img src="do13-removebg-preview.png" width="300" height="300">
+      <div class="caption">
+        <h3>Docente</h3>
+        <p><strong>Nombre:</strong>Claudia Isabel Gómez</p><br>
+        <p><strong>Estudios:</strong> Ingeniera de sistemas</p>
+      </div>
+    </div>
+
+    <div class="image">
+        <img src="do14-removebg-preview.png" width="300" height="300">
+      <div class="caption">
+        <h3>Docente</h3>
+        <p><strong>Nombre:</strong>Diana Catalina reyes Serna </p><br>
+        <p><strong>Estudios:</strong> Licenciada en ciencias religiosas y magister en gestión de la tecnología educativa</p>
+      </div>
+    </div>
+    <div class="image">
+        <img src="do15-removebg-preview.png" width="300" height="300">
+      <div class="caption">
+        <h3>Docente</h3>
+        <p><strong>Nombre:</strong>Jey Erik Yurgaky</p><br>
+        <p><strong>Estudios:</strong>Ingeniero en sistemas,licenciatura en tecnología e informática y seguridad informática</p>
+      </div>
+    </div>
+    <div class="image">
+        <img src="do16-removebg-preview.png" width="300" height="300">
+      <div class="caption">
+        <h3>Docente</h3>
+        <p><strong>Nombre:</strong>Franklin Rodíguez Ordóñez</p><br>
+        <p><strong>Estudios:</strong>Licenciatura en lenguas extrangeras (ingles y frances)</p>
+      </div>
+    </div>
+
+    <div class="image">
+        <img src="do17-removebg-preview.png" width="300" height="300">
+      <div class="caption">
+        <h3>Docente</h3>
+        <p><strong>Nombre:</strong>Maria Isabel Hernandez Escudero</p><br>
+        <p><strong>Estudios:</strong>Licenciada en lenguas modernas (español e inglés), Didáctica de la enseñanza en Inglés, Magíster en educación.</p>
+      </div>
+    </div>
+
+    <div class="image">
+        <img src="do18-removebg-preview.png" width="300" height="300">
+      <div class="caption">
+        <h3>Docente</h3>
+        <p><strong>Nombre:</strong>Monica Rodríguez Rodríguez </p><br>
+        <p><strong>Estudios:</strong>Licenciatura en filosofía y maestría en ciencia de la educación</p>
+      </div>
+    </div>
+
+    <div class="image">
+        <img src="do19-removebg-preview.png" width="300" height="300">
+      <div class="caption">
+        <h3>Docente</h3>
+        <p><strong>Nombre:</strong>Diana María Peláez Villegas
+        </p><br>
+        <p><strong>Estudios:</strong>Licenciatura en geografía e historia en la Universidad de Antioquia</p>
+      </div>
+    </div>
+
+    <div class="imagenn">
+        <img src="https://cdn-icons-png.flaticon.com/512/53/53068.png" width="400" height="500">
+      <div class="caption">
+        <h3>Docente</h3>
+        <p><strong>Nombre:</strong>Sergio Andrés Martínez Salazar
+        </p><br>
+        <p><strong>Estudios:</strong>LLicenciatura en física, matemáticas e ingeniería civil </p>
+      </div>
+    </div>
+    <script>
+        // Obtener el elemento del botón "Nosotros"
+        var nosotros = document.getElementById("nosotros");
+
+        // Añadir un evento para mantener visible el menú desplegable al pasar el cursor sobre él
+        nosotros.addEventListener("mouseover", function() {
+            // Obtener el menú desplegable
+            var submenu = nosotros.querySelector("ul");
+
+            // Mostrar el menú desplegable
+            submenu.style.display = "block";
+        });
+
+        // Añadir un evento para ocultar el menú desplegable al quitar el cursor del botón "Nosotros"
+        nosotros.addEventListener("mouseout", function() {
+            // Obtener el menú desplegable
+            var submenu = nosotros.querySelector("ul");
+
+            // Ocultar el menú desplegable
+            submenu.style.display = "none";
+        });
+    </script>
+
+</body>
+</html>
